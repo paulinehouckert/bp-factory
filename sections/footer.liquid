@@ -1,0 +1,63 @@
+{% assign s = section.settings %}
+<footer class="footer">
+    <div class="footer_content">
+        <div>NL</div>
+        <div class="footer_content-logo">{% render 'logo' with 'secondary' %}</div>
+        <div class="footer_content-navigation">
+            <h2>{{ s.title_navigation }}</h2>
+            <div class="footer_navigation-wrapper">
+                <div>
+                    <ul>
+                        {% for link in linklists[s.navigation_1].links %}
+                        <li><a class="hovered" href="{{ link.url }}">{{ link.title }}</a></li>
+                        {% endfor%}
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        {% for link in linklists[s.navigation_2].links %}
+                        <li><a class="hovered" href="{{ link.url }}">{{ link.title }}</a></li>
+                        {% endfor%}
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        {% for link in linklists[s.navigation_3].links %}
+                        <li><a class="hovered" href="{{ link.url }}">{{ link.title }}</a></li>
+                        {% endfor%}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+{% schema %}
+{
+    "name": "Footer",
+    "settings": [
+     {
+         "type": "text",
+         "id": "title_navigation",
+         "label": "Title"
+     },
+     {
+        "type": "link_list",
+        "id": "navigation_1",
+        "label": "Navigation 1"
+     },
+     {
+        "type": "link_list",
+        "id": "navigation_2",
+        "label": "Navigation 2"
+     },
+     {
+        "type": "link_list",
+        "id": "navigation_3",
+        "label": "Navigation 3"
+     }
+    ]
+}
+{% endschema %}

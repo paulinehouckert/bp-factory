@@ -1,0 +1,30 @@
+.footer {
+  @apply bg-gray-1 py-12 text-white;
+
+  .footer_content {
+    @apply container grid justify-center items-center;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .footer_content-logo {
+      @apply flex justify-center items-center;
+    }
+
+    .footer_content-navigation {
+      h2 {
+        @apply mb-3;
+      }
+
+      .footer_navigation-wrapper {
+        @apply flex justify-between;
+
+        a {
+          @apply text-white text-xs;
+
+          &:hover {
+            @apply text-gray-2;
+          }
+        }
+      }
+    }
+  }
+}
