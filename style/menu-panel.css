@@ -1,0 +1,57 @@
+.menu-panel {
+  @apply bg-white p-8 fixed z-20;
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  top: 0;
+  right: 0;
+  display: none;
+
+  &.active {
+    display: block;
+    animation-name: SlideInRight;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+  }
+
+  &.animation-out {
+    animation-name: SlideOutRight;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+  }
+
+  .menu-panel_heading {
+    @apply flex justify-between items-center mb-10;
+  }
+
+  .menu-panel_linklist {
+    li:not(:last-child) {
+      @apply mb-2;
+    }
+
+    a {
+      @apply uppercase;
+    }
+  }
+}
+
+@screen md {
+  .menu-panel_overlay {
+    @apply z-10 cursor-pointer fixed;
+    display: none;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(59, 59, 59, 0.6);
+    animation: 0.3s ease-in-out;
+
+    &.active {
+      @apply block;
+      animation: 0.3s ease-in-out;
+    }
+  }
+
+  .menu-panel {
+    width: 30%;
+  }
+}
