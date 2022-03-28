@@ -1,22 +1,26 @@
 // Toggle menu panel
 
-const menu = document.querySelector("#menu");
-const menuPanelOverlay = document.querySelector(".menu-panel_overlay");
-const menuPanel = document.querySelector(".menu-panel");
-const close = document.querySelector(".close-icon");
-const body = document.querySelector("body");
+window.addEventListener("load", () => {
+  const $menu = document.querySelector("#menu");
+  const $menuPanelOverlay = document.querySelector(".menu-panel_overlay");
+  const $menuPanel = document.querySelector(".menu-panel");
+  const $close = document.querySelector(".close-icon");
 
-menu.addEventListener("click", () => {
-  menuPanelOverlay.classList.add("active");
-  menuPanel.classList.add("active");
-});
+  if (!$menu || !$menuPanelOverlay || !$menuPanel || !$close) {
+    console.error("element is missing");
+    return;
+  }
 
-close.addEventListener("click", () => {
-  menuPanelOverlay.classList.remove("active");
-  menuPanel.classList.remove("active");
-});
+  $menu.addEventListener("click", () => {
+    $menuPanelOverlay.classList.add("active");
+    $menuPanel.classList.add("active");
+  });
 
-menuPanelOverlay.addEventListener("click", () => {
-  menuPanelOverlay.classList.remove("active");
-  menuPanel.classList.remove("active");
+  $close.addEventListener("click", closeMenuPanel);
+  $menuPanelOverlay.addEventListener("click", closeMenuPanel);
+
+  function closeMenuPanel() {
+    $menuPanelOverlay.classList.remove("active");
+    $menuPanel.classList.remove("active");
+  }
 });

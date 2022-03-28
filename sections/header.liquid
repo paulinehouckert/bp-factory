@@ -1,6 +1,13 @@
-<header class="header_wrapper">
-<div class="header">
+<div class="header_content">
     <a class="header_logo" href="{{ shop.url }}">{% render 'logo' with 'main' %}</a>
     <div id="menu" class="icon-hovered">{% render 'icon' with 'menu', color:'#3B3B3B' %}</div>
 </div>
-</header>    
+
+{% schema %}
+{
+    "name": "Header",
+    "tag": "header",
+    "class": "header_wrapper",
+    "settings": []
+}
+{% endschema %}

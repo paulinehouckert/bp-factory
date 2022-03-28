@@ -80,7 +80,7 @@
     </head>
     
     <body class="template-{{ request.page_type | handle }}">
-      <div>{% section 'header' %}</div>
+      {% section 'header' %}
     
         <main role="main" style="overflow:hidden">
           {{ content_for_layout }}

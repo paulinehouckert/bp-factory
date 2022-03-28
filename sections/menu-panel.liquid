@@ -1,21 +1,20 @@
 {% assign s = section.settings %}
-<div class="menu-panel_overlay">
-    <div class="menu-panel">
-        <div class="menu-panel_heading">
-            <h2>{{ s.title }}</h2>
-            <div class="icon-hovered close-icon">{% render 'icon' with 'close', color:'#3B3B3B'%}</div>
-        </div>
-    
-        <div class="menu-panel_linklist">
-            <ul>
-            {% for link in linklists[s.menu].links %}
-            <li><a class="hovered" href="{{ link.url }}">{{ link.title }}</a></li>
-            {% endfor%}
-            </ul>
-        </div>
-    
+<div class="menu-panel_overlay"></div>
+<div class="menu-panel">
+    <div class="menu-panel_heading">
+        <h2>{{ s.title }}</h2>
+        <div class="icon-hovered close-icon">{% render 'icon' with 'close', color:'#3B3B3B'%}</div>
     </div>
+
+    <nav class="menu-panel_linklist">
+        <ul>
+        {% for link in linklists[s.menu].links %}
+        <li><a class="hovered" href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor%}
+        </ul>
+    </nav>
 </div>
+
 
 {% schema %}
 {

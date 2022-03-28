@@ -1,42 +1,42 @@
 {% assign s = section.settings %}
-<footer class="footer">
-    <div class="footer_content">
-        <div>NL</div>
-        <div class="footer_content-logo">{% render 'logo' with 'secondary' %}</div>
-        <div class="footer_content-navigation">
-            <h2>{{ s.title_navigation }}</h2>
-            <div class="footer_navigation-wrapper">
-                <div>
-                    <ul>
-                        {% for link in linklists[s.navigation_1].links %}
-                        <li><a class="hovered" href="{{ link.url }}">{{ link.title }}</a></li>
-                        {% endfor%}
-                    </ul>
-                </div>
+<div class="footer_content">
+    <div>NL</div>
+    <div class="footer_content-logo">{% render 'logo' with 'secondary' %}</div>
+    <div class="footer_content-navigation">
+        <h2>{{ s.title_navigation }}</h2>
+        <div class="footer_navigation-wrapper">
+            <nav>
+                <ul>
+                    {% for link in linklists[s.navigation_1].links %}
+                    <li><a class="hovered" href="{{ link.url }}">{{ link.title }}</a></li>
+                    {% endfor%}
+                </ul>
+            </nav>
 
-                <div>
-                    <ul>
-                        {% for link in linklists[s.navigation_2].links %}
-                        <li><a class="hovered" href="{{ link.url }}">{{ link.title }}</a></li>
-                        {% endfor%}
-                    </ul>
-                </div>
+            <nav>
+                <ul>
+                    {% for link in linklists[s.navigation_2].links %}
+                    <li><a class="hovered" href="{{ link.url }}">{{ link.title }}</a></li>
+                    {% endfor%}
+                </ul>
+            </nav>
 
-                <div>
-                    <ul>
-                        {% for link in linklists[s.navigation_3].links %}
-                        <li><a class="hovered" href="{{ link.url }}">{{ link.title }}</a></li>
-                        {% endfor%}
-                    </ul>
-                </div>
-            </div>
+            <nav>
+                <ul>
+                    {% for link in linklists[s.navigation_3].links %}
+                    <li><a class="hovered" href="{{ link.url }}">{{ link.title }}</a></li>
+                    {% endfor%}
+                </ul>
+            </nav>
         </div>
     </div>
-</footer>
+</div>
 
 {% schema %}
 {
     "name": "Footer",
+    "tag": "footer",
+    "class": "footer",
     "settings": [
      {
          "type": "text",
