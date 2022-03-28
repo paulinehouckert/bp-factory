@@ -1,8 +1,15 @@
 {
+  "scripts": {
+    "build": "postcss ./style/style.css -o ./assets/style.css --watch"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
     "postcss": "^8.4.12",
     "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.1.0",
     "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "cssnano": "^5.1.5"
   }
 }

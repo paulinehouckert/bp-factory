@@ -1,3 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,700&display=swap");
+@import "./header.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply font-theme italic bg-neutral-2 text-sm text-dark;
+}
+
+h1 {
+  @apply font-bold text-2xl;
+}
+
+h2 {
+  @apply text-xl font-bold;
+}
+
+.icon {
+  @apply block cursor-pointer;
+  min-width: 20px;
+  max-width: 20px;
+
+  &:hover,
+  &path:hover,
+  &rect:hover {
+    @apply fill-gray-2 stroke-gray-2;
+  }
+}
+
+.hovered {
+  @apply text-gray-2;
+}
