@@ -1,3 +1,30 @@
 {
-  "current": {}
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "title_navigation": "Useful links",
+          "navigation_1": "menu-footer-1",
+          "navigation_2": "menu-footer-2",
+          "navigation_3": "menu-footer-3"
+        }
+      },
+      "menu-panel": {
+        "type": "menu-panel",
+        "settings": {
+          "title": "Menu",
+          "menu": "main-menu"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
 }
