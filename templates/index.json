@@ -1,0 +1,11 @@
+{
+    "sections": {
+        "banner": {
+            "type": "home_banner",
+            "settings" {}
+        }
+    },
+    "order": [
+        "banner"
+    ]
+}
