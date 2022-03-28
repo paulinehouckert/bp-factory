@@ -1,3 +1,25 @@
-.header {
-  background: red !important;
+.header_wrapper {
+  @apply bg-neutral-1 py-6;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+
+  .header {
+    @apply container flex justify-between items-center;
+
+    .icon {
+      min-width: 18px;
+      max-width: 18px;
+    }
+
+    .header_logo {
+      @apply cursor-pointer opacity-100;
+      transition: 0.3s ease-in-out;
+      min-width: 137px;
+      max-width: 137px;
+
+      &:hover {
+        @apply opacity-60;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
 }

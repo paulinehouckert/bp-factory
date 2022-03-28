@@ -19,6 +19,14 @@ module.exports = {
     fontFamily: {
       theme: ["Montserrat", "sans-serif"],
     },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        md: "2rem",
+        lg: "3rem",
+      },
+    },
     extend: {},
   },
   plugins: [],
