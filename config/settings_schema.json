@@ -1,30 +1,3 @@
 [
-  {
-    "name": "theme_info",
-    "theme_name": "Backpack theme",
-    "theme_author": "PH",
-    "theme_version": "0.0",
-    "theme_documentation_url": "url",
-    "theme_support_url": "https://support.shopify.com/"
-  },
-  {
-    "name": "Favicon",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "favicon",
-        "label": "Image favicon"
-      }
-    ]
-  },
-  {
-    "name": "Nom de la boutique",
-    "settings": [
-      {
-        "type": "text",
-        "id": "shop-name",
-        "label": "Nom de la boutique"
-      }
-    ]
-  }
+
 ]
