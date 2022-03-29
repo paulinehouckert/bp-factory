@@ -1,0 +1,27 @@
+<div class="newsletter_form" aria-labelledby="newsletter form">
+    {% form 'customer', id: 'newsletter-form' %}
+
+    {{ form.errors | default_errors }}
+    {% if form.posted_successfully %}
+    <div class="form_success-message" autofocus>{{ "general.newsletter.success_msg" | translate }}</div>
+    {% elsif form.errors %}
+    <div class="form_error-message" autofocus aria-invalid="true">{{ "general.newsletter.error_msg" | translate }}</div>
+    {% endif %}
+
+    <div class="newsletter_form-content {% if form.posted_successfully %}hidden{% endif %}">
+      <div class="newsletter_form-input">
+          <input type="email" required name="contact[email]" aria-required="true" autocorrect="off" autocapitalize="off" autocomplete="email" value="{{ customer.email }}"
+          placeholder="{{ "general.newsletter.placeholder" | t }}"></input>
+          <input type="hidden" name="customer[accepts_marketing]" checked="checked" value="true"/>
+          <input type="hidden" name="contact[tags]" value="newsletter-form">
+          <button class="main-cta cta" type="submit" aria-label="{{ "general.newsletter.btn_text" | t }}">{{ "general.newsletter.btn_text" | t }}</button>
+      </div>
+
+      <div class="newsletter_form-legal-msg {% if form.posted_successfully %}hidden{% endif %}">
+        <input id="terms" required type="checkbox"></input>
+        <label for="terms">{{ settings.legal_msg }}</label>
+      </div>
+    </div>
+
+    {% endform%}
+</div>

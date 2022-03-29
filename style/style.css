@@ -2,9 +2,12 @@
 @import "./header.css";
 @import "./menu-panel.css";
 @import "./footer.css";
+@import "./newsletter.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global */
 
 body {
   @apply font-theme italic bg-neutral-2 text-sm text-dark;
@@ -14,6 +17,7 @@ main {
   height: 100vh;
 }
 
+/* Headings */
 h1 {
   @apply font-bold text-2xl;
 }
@@ -21,6 +25,8 @@ h1 {
 h2 {
   @apply text-xl font-bold;
 }
+
+/* Icon */
 
 .icon {
   @apply block cursor-pointer;
@@ -41,6 +47,7 @@ h2 {
   }
 }
 
+/* Utilities */
 .hovered {
   transition: 0.3s ease-in-out;
 
@@ -50,20 +57,6 @@ h2 {
   }
 }
 
-@keyframes SlideInRight {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes SlideOutRight {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100%);
-  }
+.hidden {
+  display: none;
 }

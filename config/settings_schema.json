@@ -18,12 +18,12 @@
     ]
   },
   {
-    "name": "Nom de la boutique",
+    "name": "Newsletter",
     "settings": [
       {
-        "type": "text",
-        "id": "shop-name",
-        "label": "Nom de la boutique"
+        "type": "richtext",
+        "id": "legal_msg",
+        "label": "Terms and condition message"
       }
     ]
   }

@@ -1,0 +1,40 @@
+.newsletter_form {
+  .newsletter_form-content {
+    @apply text-xs;
+
+    .newsletter_form-input {
+      @apply flex mt-5;
+
+      input {
+        @apply appearance-none;
+      }
+
+      input,
+      button {
+        @apply uppercase;
+      }
+
+      input[type="email"]::placeholder,
+      button {
+        @apply text-gray-3;
+      }
+
+      input[type="email"] {
+        background: initial;
+        width: 285px;
+      }
+
+      button {
+        @apply font-bold;
+      }
+    }
+
+    .newsletter_form-legal-msg {
+      @apply flex items-center gap-3 mt-5;
+
+      input[type="checkbox"] {
+        @apply bg-gray-3;
+      }
+    }
+  }
+}

@@ -1,6 +1,10 @@
 {% assign s = section.settings %}
 <div class="footer_content">
-    <div>NL</div>
+    <div class="footer_newsletter">
+        <h2>{{ s.newsletter_title }}</h2>
+        <div>{{ s.newsletter_subtitle }}</div>
+        <div>{% render 'newsletter' %}</div>
+    </div>
     <div class="footer_content-logo">{% render 'logo' with 'secondary' %}</div>
     <div class="footer_content-navigation">
         <h2>{{ s.title_navigation }}</h2>
@@ -38,6 +42,24 @@
     "tag": "footer",
     "class": "footer",
     "settings": [
+     {
+        "type": "header",
+        "content": "Newsletter"
+     },
+     {
+        "type": "text",
+        "id": "newsletter_title",
+        "label": "Newsletter title"
+     },
+     {
+        "type": "text",
+        "id": "newsletter_subtitle",
+        "label": "Newsletter subtitle"
+     },
+     {
+        "type": "header",
+        "content": "Navigation"
+     },
      {
          "type": "text",
          "id": "title_navigation",

@@ -3,6 +3,12 @@
     "labels": {
       "see-all": "See all",
       "menu": "Menu"
+    },
+    "newsletter": {
+      "success_msg": "Thank you for your subscription",
+      "error_msg": "This email address seems to be already registered",
+      "placeholder": "e-mail-address",
+      "btn_text": "ok"
     }
   }
 }
