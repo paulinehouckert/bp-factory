@@ -1,5 +1,7 @@
 {
   "current": {
+    "shop-name": "Backpak",
+    "legal_msg": "<p>I have read and accepted <a href=\"\/pages\/privacy-policy\" title=\"Privacy policy\">privacy policy<\/a><\/p>",
     "sections": {
       "header": {
         "type": "header",
@@ -9,6 +11,8 @@
       "footer": {
         "type": "footer",
         "settings": {
+          "newsletter_title": "Join our newsletter",
+          "newsletter_subtitle": "To get updated about latest news",
           "title_navigation": "Useful links",
           "navigation_1": "menu-footer-1",
           "navigation_2": "menu-footer-2",
