@@ -3,7 +3,13 @@
     @apply text-xs;
 
     .newsletter_form-input {
-      @apply flex mt-5;
+      @apply flex justify-between mt-5 pb-2;
+      width: 100%;
+      border-bottom: 1px solid #6e6e6d;
+
+      &:focus-within {
+        border-bottom: 1px solid #ffffff;
+      }
 
       input {
         @apply appearance-none;
@@ -21,11 +27,20 @@
 
       input[type="email"] {
         background: initial;
-        width: 285px;
+
+        &:focus {
+          @apply outline-none text-white;
+        }
       }
 
       button {
         @apply font-bold;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          @apply text-white;
+          transition: 0.3s ease-in-out;
+        }
       }
     }
 
@@ -34,6 +49,18 @@
 
       input[type="checkbox"] {
         @apply bg-gray-3;
+      }
+    }
+
+    .newsletter_form-legal-msg {
+      a {
+        @apply underline text-white;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          @apply text-gray-2;
+          transition: 0.3s ease-in-out;
+        }
       }
     }
   }

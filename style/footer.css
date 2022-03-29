@@ -3,7 +3,7 @@
 
   .footer_content {
     @apply container grid justify-center items-center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
 
     .footer_newsletter {
       > div:nth-child(2) {
