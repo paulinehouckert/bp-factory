@@ -24,3 +24,20 @@ window.addEventListener("load", () => {
     $menuPanel.classList.remove("active");
   }
 });
+
+// Toggle checkbox
+
+const $checkbox = document.querySelector("#checkbox");
+const $checkbox_checked = document.querySelector("#checkbox-checked");
+
+if ($checkbox) {
+  $checkbox.addEventListener("click", () => {
+    $checkbox.classList.remove("active");
+    $checkbox_checked.classList.add("active");
+  });
+
+  $checkbox_checked.addEventListener("click", () => {
+    $checkbox.classList.add("active");
+    $checkbox_checked.classList.remove("active");
+  });
+}

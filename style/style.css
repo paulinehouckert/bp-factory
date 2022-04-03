@@ -30,8 +30,6 @@ h2 {
 
 .icon {
   @apply block cursor-pointer;
-  min-width: 20px;
-  max-width: 20px;
   transition: 0.3s ease-in-out;
 }
 

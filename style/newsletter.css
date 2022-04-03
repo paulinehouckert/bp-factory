@@ -26,6 +26,7 @@
       }
 
       input[type="email"] {
+        @apply w-full;
         background: initial;
 
         &:focus {
@@ -47,8 +48,20 @@
     .newsletter_form-legal-msg {
       @apply flex items-center gap-3 mt-5;
 
-      input[type="checkbox"] {
-        @apply bg-gray-3;
+      #checkbox {
+        display: none;
+      }
+
+      #checkbox.active {
+        @apply block;
+      }
+
+      #checkbox-checked {
+        display: none;
+      }
+
+      #checkbox-checked.active {
+        @apply block;
       }
     }
 

@@ -18,7 +18,9 @@
       </div>
 
       <div class="newsletter_form-legal-msg {% if form.posted_successfully %}hidden{% endif %}">
-        <input id="terms" required type="checkbox">
+        <input id="terms" required hidden type="checkbox">
+        <div id="checkbox" class="active">{% render 'icon' with 'checkbox', color: '#6E6E6D' %}</div>
+        <div id="checkbox-checked">{% render 'icon' with 'checkbox-checked', color: '#6E6E6D' %}</div>
         <label for="terms">{{ settings.legal_msg }}</label>
       </div>
     </div>
