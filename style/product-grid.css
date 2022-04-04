@@ -3,12 +3,8 @@
 
   .product-grid {
     @apply container;
-  }
 
-  .product-grid_header {
-    @apply flex justify-between items-start mb-7;
-
-    a {
+    .product-grid_link {
       @apply uppercase text-gray-2 text-base font-bold;
       border-bottom: 2px solid #898989;
       transition: 0.3s ease-in-out;
@@ -18,7 +14,18 @@
         border-bottom: 2px solid #3b3b3b;
         transition: 0.3s ease-in-out;
       }
+
+      &.product-grid_link-desktop {
+        @apply hidden md:block;
+      }
     }
+    .product-grid_link-mobile {
+      @apply flex justify-center md:hidden mt-7;
+    }
+  }
+
+  .product-grid_header {
+    @apply flex justify-between items-start mb-7;
   }
 
   .product-grid_content {

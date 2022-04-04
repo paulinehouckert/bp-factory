@@ -48,6 +48,14 @@
     }
 
     .banner_tagline {
+      font-size: 58px;
+    }
+  }
+}
+
+@screen xl {
+  .banner_wrapper {
+    .banner_tagline {
       font-size: 90px;
     }
   }

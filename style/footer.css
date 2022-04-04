@@ -39,16 +39,23 @@
     }
   }
 }
-
 @screen md {
   .footer {
     .footer_content {
       @apply grid;
-      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
     }
-
     .footer_content-logo {
       order: initial !important;
+    }
+  }
+}
+
+@screen lg {
+  .footer {
+    .footer_content {
+      @apply grid;
+      grid-template-columns: 1fr 2fr 1fr;
     }
   }
 }
