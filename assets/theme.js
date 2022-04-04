@@ -66,3 +66,28 @@ const home_slider = new Swiper(".product-grid .swiper-container", {
   slidesPerView: "auto",
   spaceBetween: 15,
 });
+
+// add to cart
+const $addToCart = document.querySelectorAll(".product-card_icon");
+
+$addToCart.forEach((el) => {
+  el.addEventListener("click", async () => {
+    const variantID = Number(el.dataset.id);
+    const requestObj = {
+      items: [
+        {
+          id: variantID,
+          quantity: 1,
+        },
+      ],
+    };
+    console.log(requestObj);
+    const request = await fetch("/cart/add.js", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(requestObj),
+    });
+  });
+});

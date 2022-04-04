@@ -14,9 +14,11 @@
             </div>
         </div> 
 
-        <div class="product-card_icon">
-            {% render 'icon' with 'basket', color: '#3B3B3B' %}
-        </div>
+        {% if product.available %}
+            <div class="product-card_icon" data-id="{{ product.variants[0].id }}">
+                {% render 'icon' with 'basket', color: '#3B3B3B' %}
+            </div>
+        {% endif %}
     </div>
 
 
