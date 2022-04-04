@@ -1,11 +1,40 @@
 .banner_wrapper {
   .banner {
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background: url("https://cdn.shopify.com/s/files/1/0602/1939/2154/files/pexels-creative-vix-9754_1.png?v=1649066891");
+    @apply relative;
+  }
+
+  .banner_img {
+    @apply flex items-center justify-center relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 33%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      object-fit: cover;
+    }
   }
   .banner_content {
     @apply container flex items-center justify-center flex-col text-white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  .banner_tagline {
+    color: white;
+    font-size: 90px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 23px;
+    left: 0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-fill-color: transparent;
   }
 }

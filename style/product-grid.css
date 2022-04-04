@@ -1,0 +1,29 @@
+.product-grid_wrapper {
+  @apply py-7;
+
+  .product-grid {
+    @apply container;
+  }
+
+  .product-grid_header {
+    @apply flex justify-between items-start;
+
+    a {
+      @apply uppercase text-gray-2 text-base;
+      border-bottom: 2px solid #898989;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        @apply text-dark;
+        border-bottom: 2px solid #3b3b3b;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+@screen md {
+  .product-grid_wrapper {
+    @apply py-14;
+  }
+}

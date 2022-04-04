@@ -7,9 +7,11 @@
         "subtitle": "made for exploration",
         "tagline": "Never stop exploring"
       }
+    },
+    "product-grid": {
+      "type": "product-grid",
+      "settings": {}
     }
   },
-  "order": [
-    "banner"
-  ]
+  "order": ["banner", "product-grid"]
 }

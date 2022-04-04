@@ -4,6 +4,7 @@
 @import "./footer.css";
 @import "./newsletter.css";
 @import "./home_banner.css";
+@import "./product-grid.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,10 +13,6 @@
 
 body {
   @apply font-theme italic bg-neutral-2 text-sm text-dark;
-}
-
-main {
-  height: 100vh;
 }
 
 /* Headings */

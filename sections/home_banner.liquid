@@ -1,9 +1,13 @@
 {% assign s = section.settings %}
-<div class="banner" loading="lazy">
+<div class="banner">
+    <div class="banner_img">
+        <img src="{{ s.img | image_url: height: 475 }}" alt="{{ s.img.alt }}">
+    </div>
     <div class="banner_content">
         <h1>{{ s.title }}</h1>
         <h2>{{ s.subtitle }}</h2>
     </div>
+    <div class="banner_tagline">{{ s.tagline }}</div>
 </div>
 
 {% schema %}
@@ -12,6 +16,11 @@
     "tag": "section",
     "class": "banner_wrapper",
     "settings": [
+    {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+    },
     {
         "type": "text",
         "id": "title",

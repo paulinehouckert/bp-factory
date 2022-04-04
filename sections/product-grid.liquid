@@ -1,0 +1,46 @@
+{% assign s = section.settings %}
+<div class="product-grid">
+    <div class="product-grid_header">
+        <div>
+            <h3>{{ s.title }}</h3>
+            <div>{{ s.subtitle }}</div>
+        </div>
+        <a href="{{ s.collection_url }}"><h3>{{ s.collection_link }}</h3></a>
+    </div>
+
+</div>
+
+{% schema %}
+{
+    "name": "Product grid",
+    "tag": "section",
+    "class": "product-grid_wrapper",
+    "settings": [
+    {
+        "type": "collection",
+        "id": "collection",
+        "label": "Collection"
+    },
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+    },
+    {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle"
+    },
+    {
+        "type": "text",
+        "id": "collection_link",
+        "label": "Collection link"
+    },
+    {
+        "type": "url",
+        "id": "collection_url",
+        "label": "Collection url"
+    }
+    ]
+}
+{% endschema %}
