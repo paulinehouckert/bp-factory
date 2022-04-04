@@ -1,7 +1,7 @@
 {
   "current": {
-    "shop-name": "Backpak",
     "legal_msg": "<p>I have read and accepted <a href=\"\/pages\/privacy-policy\" title=\"Privacy policy\">privacy policy<\/a><\/p>",
+    "shop-name": "Backpak",
     "sections": {
       "header": {
         "type": "header",

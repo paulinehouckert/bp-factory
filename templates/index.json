@@ -2,8 +2,14 @@
   "sections": {
     "banner": {
       "type": "home_banner",
-      "settings": {}
+      "settings": {
+        "title": "High quality backpacks",
+        "subtitle": "made for exploration",
+        "tagline": "Never stop exploring"
+      }
     }
   },
-  "order": ["banner"]
+  "order": [
+    "banner"
+  ]
 }
