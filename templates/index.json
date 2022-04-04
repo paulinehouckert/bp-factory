@@ -3,6 +3,7 @@
     "banner": {
       "type": "home_banner",
       "settings": {
+        "img": "shopify:\/\/shop_images\/pexels-creative-vix-9754_1.png",
         "title": "High quality backpacks",
         "subtitle": "made for exploration",
         "tagline": "Never stop exploring"
@@ -10,8 +11,18 @@
     },
     "product-grid": {
       "type": "product-grid",
-      "settings": {}
+      "settings": {
+        "collection": "frontpage",
+        "limit": 8,
+        "title": "Featured products",
+        "subtitle": "Discover our brand new products",
+        "collection_link": "See all",
+        "collection_url": "shopify:\/\/collections\/all"
+      }
     }
   },
-  "order": ["banner", "product-grid"]
+  "order": [
+    "banner",
+    "product-grid"
+  ]
 }
