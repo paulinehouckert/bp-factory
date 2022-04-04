@@ -56,3 +56,13 @@ if ($newsletter_form) {
     }
   });
 }
+
+// init homepage grid slider on mobile
+const home_slider = new Swiper(".product-grid .swiper-container", {
+  speed: 800,
+  loop: false,
+  lazy: true,
+  autoplay: false,
+  slidesPerView: "auto",
+  spaceBetween: 15,
+});

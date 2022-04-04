@@ -6,10 +6,18 @@
   .product-card_details {
     @apply flex items-start justify-between mt-4;
 
-    .product-card_price {
+    .product-card_info {
       @apply flex flex-col;
       .product-card_title {
         @apply mb-1;
+      }
+
+      .product-card_price {
+        @apply flex gap-1;
+
+        .old-price {
+          @apply text-gray-2;
+        }
       }
     }
 

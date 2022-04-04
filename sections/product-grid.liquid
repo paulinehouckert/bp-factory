@@ -8,14 +8,17 @@
         <a href="{{ s.collection_url }}">{{ s.collection_link }}</a>
     </div>
 
+
+    {% comment %}Grid - desktop{% endcomment %}
     <div class="product-grid_content">
         {% for product in collections[s.collection].products limit: s.limit %}
         {% render 'product-card', product:product %}
         {% endfor %}
     </div>
 
-    <div class="swipper-container">
-        <div class="swipper-wrapper">
+     {% comment %}Grid - mobile{% endcomment %}
+    <div class="swiper-container product-grid_slider">
+        <div class="swiper-wrapper">
             {% for product in collections[s.collection].products limit: s.limit %}
             <div class="swiper-slide">{% render 'product-card', product:product %}</div>
             {% endfor %}

@@ -6,6 +6,7 @@
 @import "./home_banner.css";
 @import "./product-grid.css";
 @import "./product-card.css";
+@import "./swiper.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

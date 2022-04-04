@@ -1,13 +1,13 @@
 .banner_wrapper {
   .banner {
-    @apply relative;
+    @apply relative overflow-hidden;
   }
 
   .banner_img {
     @apply flex items-center justify-center relative;
     width: 100%;
     overflow: hidden;
-    padding-top: 33%;
+    padding-top: 100%;
 
     img {
       height: 100%;
@@ -18,23 +18,37 @@
     }
   }
   .banner_content {
-    @apply container flex items-center justify-center flex-col text-white;
+    @apply container flex items-center justify-center flex-col text-white text-center;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
   }
 
   .banner_tagline {
     color: white;
-    font-size: 90px;
+    font-size: 28px;
     font-weight: 700;
     text-transform: uppercase;
     position: absolute;
-    bottom: 23px;
+    bottom: 0;
     left: 0;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
     -webkit-text-fill-color: transparent;
+    line-height: 72%;
+    white-space: nowrap;
+  }
+}
+
+@screen md {
+  .banner_wrapper {
+    .banner_img {
+      padding-top: 33%;
+    }
+
+    .banner_tagline {
+      font-size: 90px;
+    }
   }
 }
