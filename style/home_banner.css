@@ -1,4 +1,10 @@
 .banner_wrapper {
+  .banner {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background: url("https://cdn.shopify.com/s/files/1/0602/1939/2154/files/pexels-creative-vix-9754_1.png?v=1649066891");
+  }
   .banner_content {
     @apply container flex items-center justify-center flex-col text-white;
   }
