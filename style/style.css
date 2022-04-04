@@ -3,6 +3,7 @@
 @import "./menu-panel.css";
 @import "./footer.css";
 @import "./newsletter.css";
+@import "./home_banner.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,11 +20,15 @@ main {
 
 /* Headings */
 h1 {
-  @apply font-bold text-2xl;
+  @apply font-bold text-3xl uppercase;
 }
 
 h2 {
-  @apply text-xl font-bold;
+  @apply text-2xl;
+}
+
+h3 {
+  @apply font-bold text-xl;
 }
 
 /* Icon */

@@ -1,0 +1,5 @@
+.banner_wrapper {
+  .banner_content {
+    @apply container flex items-center justify-center flex-col text-white;
+  }
+}

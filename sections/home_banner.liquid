@@ -1,0 +1,33 @@
+{% assign s = section.settings %}
+<div class="banner">
+    <div class="banner_content">
+        <h1>{{ s.title }}</h1>
+        <h2>{{ s.subtitle }}</h2>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Home banner",
+    "tag": "section",
+    "class": "banner_wrapper",
+    "settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+    },
+    {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle"
+    },
+    {
+        "type": "text",
+        "id": "tagline",
+        "label": "Tagline"
+    }
+    ]
+}
+
+{% endschema %}

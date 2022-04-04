@@ -1,13 +1,13 @@
 {% assign s = section.settings %}
 <div class="footer_content">
     <div class="footer_newsletter">
-        <h2>{{ s.newsletter_title }}</h2>
+        <h3>{{ s.newsletter_title }}</h3>
         <div>{{ s.newsletter_subtitle }}</div>
         <div>{% render 'newsletter' %}</div>
     </div>
     <div class="footer_content-logo">{% render 'logo' with 'secondary' %}</div>
     <div class="footer_content-navigation">
-        <h2>{{ s.title_navigation }}</h2>
+        <h3>{{ s.title_navigation }}</h3>
         <div class="footer_navigation-wrapper">
             <nav>
                 <ul>

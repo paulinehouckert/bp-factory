@@ -2,8 +2,12 @@
   @apply bg-gray-1 py-12 text-white;
 
   .footer_content {
-    @apply container grid justify-center items-center;
-    grid-template-columns: 1fr 2fr 1fr;
+    @apply container justify-center items-center flex flex-col gap-x-7;
+    gap: 30px;
+
+    > div {
+      @apply w-full;
+    }
 
     .footer_newsletter {
       > div:nth-child(2) {
@@ -13,10 +17,11 @@
 
     .footer_content-logo {
       @apply flex justify-center items-center;
+      order: 3;
     }
 
     .footer_content-navigation {
-      h2 {
+      h3 {
         @apply mb-3;
       }
 
@@ -31,6 +36,19 @@
           }
         }
       }
+    }
+  }
+}
+
+@screen md {
+  .footer {
+    .footer_content {
+      @apply grid;
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .footer_content-logo {
+      order: initial !important;
     }
   }
 }
