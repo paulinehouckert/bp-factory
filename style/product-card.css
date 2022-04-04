@@ -1,0 +1,25 @@
+.product-card_wrapper {
+  .product-card_img:hover img {
+    @apply opacity-70;
+    transition: 0.3s ease-in-out;
+  }
+  .product-card_details {
+    @apply flex items-start justify-between mt-4;
+
+    .product-card_price {
+      @apply flex flex-col;
+      .product-card_title {
+        @apply mb-1;
+      }
+    }
+
+    .product-card_icon {
+      @apply py-1 px-2;
+
+      &:hover svg path {
+        transition: 0.3s ease-in-out;
+        @apply !fill-gray-2;
+      }
+    }
+  }
+}

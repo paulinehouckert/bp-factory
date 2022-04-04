@@ -5,7 +5,21 @@
             <h3>{{ s.title }}</h3>
             <div>{{ s.subtitle }}</div>
         </div>
-        <a href="{{ s.collection_url }}"><h3>{{ s.collection_link }}</h3></a>
+        <a href="{{ s.collection_url }}">{{ s.collection_link }}</a>
+    </div>
+
+    <div class="product-grid_content">
+        {% for product in collections[s.collection].products limit: s.limit %}
+        {% render 'product-card', product:product %}
+        {% endfor %}
+    </div>
+
+    <div class="swipper-container">
+        <div class="swipper-wrapper">
+            {% for product in collections[s.collection].products limit: s.limit %}
+            <div class="swiper-slide">{% render 'product-card', product:product %}</div>
+            {% endfor %}
+        </div>
     </div>
 
 </div>
@@ -20,6 +34,11 @@
         "type": "collection",
         "id": "collection",
         "label": "Collection"
+    },
+    {
+        "type": "number",
+        "id": "limit",
+        "label": "Max products to show"
     },
     {
         "type": "text",

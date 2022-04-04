@@ -1,0 +1,21 @@
+<div class="product-card_wrapper">
+    <a href="{{ product.url }}" class="product-card_img">
+        <img src="{{ product.featured_image | image_url: width: 285 }}" alt="{{ product.featured_image.alt }}">
+    </a>
+
+    <div class="product-card_details">
+        <div class="product-card_price">
+            <a href="{{ product.url }}" class="product-card_title hovered">{{ product.title }}</a>
+            {% if product.compare_at_price_min > 0 %}
+            <del class="old-price">{{ product.compare_at_price | money }}</del>
+            {% endif %}
+            <span class="regular-price">{{ product.price | money }}</span>
+        </div> 
+
+        <div class="product-card_icon">
+            {% render 'icon' with 'basket', color: '#3B3B3B' %}
+        </div>
+    </div>
+
+
+</div>
