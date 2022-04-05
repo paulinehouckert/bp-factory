@@ -15,6 +15,10 @@
 
   .menu-panel_heading {
     @apply flex justify-between items-center mb-10;
+
+    h2 {
+      @apply font-bold;
+    }
   }
 
   .menu-panel_linklist {
