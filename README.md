@@ -4,7 +4,6 @@ https://bp-factory.myshopify.com/
 
 Password : bpfactory
 
-Repo Github : https://github.com/paulinehouckert/bp-factory 
 
 **Environnement et technologies**
  - Projet Shopify développé avec Tailwind
