@@ -81,7 +81,6 @@ $addToCart.forEach((el) => {
         },
       ],
     };
-    console.log(requestObj);
     const request = await fetch("/cart/add.js", {
       method: "POST",
       headers: {
