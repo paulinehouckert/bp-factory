@@ -57,7 +57,3 @@ h3 {
     transition: 0.3s ease-in-out;
   }
 }
-
-.hidden {
-  display: none;
-}

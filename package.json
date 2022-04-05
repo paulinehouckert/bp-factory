@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "postcss ./style/style.css -o ./assets/style.css --watch"
+    "build": "postcss ./style/style.css -o ./assets/style.css --watch",
+    "tailwind-config-viewer": "tailwind-config-viewer -o"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
