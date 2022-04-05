@@ -4,7 +4,7 @@ https://bp-factory.myshopify.com/
 
 Password : bpfactory
 
-Repo Github :  
+Repo Github : https://github.com/paulinehouckert/bp-factory 
 
 **Environnement et technologies**
  - Projet Shopify développé avec Tailwind
@@ -15,7 +15,7 @@ Repo Github :
 
 **Structure du repo**
 - Un seul template qui correspond à celui de la home (index.json)
-- Un fichier Tailwing configuré aux normes de la maquette
+- Un fichier Tailwind configuré aux normes de la maquette
 - Une feuille de style par composant
 - Une feuille de style globale où sont importées les feuilles de style de chaque composant et contenant des classes utilitaires
 - Un fichier theme.js contenant :
